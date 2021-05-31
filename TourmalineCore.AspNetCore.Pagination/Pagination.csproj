@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <PackageId>TourmalineCore.AspNetCore.Pagination</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Nikita Medvedev</Authors>
+    <Company>Tourmaline Core</Company>
+    <Product>Pagination</Product>
+    <Description>
+      Collection of tools to easily transform HTTP request queries with paging, filtering and ordering to EF Core queries.
+    </Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://gitlab.com/tourmalinecore/tourmalinecore.aspnetcore.pagination/</RepositoryUrl>
+    <RepositoryType>GitLab</RepositoryType>
+    <PackageTags>.NETCore, EFCore, Pagination, Paging, Filters, Ordering</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>TourmalineCore.AspNetCore.Pagination</AssemblyName>
+    <RootNamespace>TourmalineCore.AspNetCore.Pagination</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="5.1.29" />
+  </ItemGroup>
+
+</Project>
