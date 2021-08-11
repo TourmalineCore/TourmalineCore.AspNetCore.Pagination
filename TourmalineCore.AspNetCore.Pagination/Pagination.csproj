@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <PackageId>TourmalineCore.AspNetCore.Pagination</PackageId>
-    <Version>0.0.1-alpha</Version>
+    <Version>0.0.1</Version>
     <Authors>Nikita Medvedev</Authors>
     <Company>Tourmaline Core</Company>
     <Product>Pagination</Product>
