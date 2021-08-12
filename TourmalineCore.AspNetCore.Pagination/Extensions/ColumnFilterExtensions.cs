@@ -9,13 +9,13 @@ namespace TourmalineCore.AspNetCore.Pagination.Extensions
         {
             var values = filter.Value
                 .Split(';')
-                .Select(x => int.Parse(x))
+                .Select(x => x.ParseNullableInt())
                 .ToArray();
 
             return new RangeFilterValues
             {
-                From = values[0],
-                To = values[1],
+                From = values[0] ?? int.MinValue,
+                To = values[1] ?? int.MaxValue,
             };
         }
     }

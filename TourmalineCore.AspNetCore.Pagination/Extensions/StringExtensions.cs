@@ -20,5 +20,15 @@ namespace TourmalineCore.AspNetCore.Pagination.Extensions
                 ? string.Empty
                 : input.First().ToString().ToUpper() + input[1..];
         }
+
+        public static int? ParseNullableInt(this string value)
+        {
+            if (int.TryParse(value, out var intValue))
+            {
+                return intValue;
+            }
+
+            return null;
+        }
     }
 }
